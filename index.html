@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f6f7f4" />
+    <meta
+      name="description"
+      content="A thoughtful workspace for people, projects, and the work that moves your company forward."
+    />
+    <title>Overview — Hope Inc.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div class="preloader" id="preloader" aria-hidden="true">
+      <div class="preloader-mark"><span></span><span></span><span></span></div>
+      <span class="preloader-name">hope<span class="brand-period">.</span><span class="brand-inc">INC.</span></span>
+    </div>
+
+    <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7" height="7" rx="1.7"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.7"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.7"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.7"/></symbol>
+      <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 20v-1.7a3.3 3.3 0 0 0-3.3-3.3H6.3A3.3 3.3 0 0 0 3 18.3V20"/><circle cx="9.5" cy="7.5" r="3.5"/><path d="M17 4.3a3.5 3.5 0 0 1 0 6.8M21 20v-1.7a3.3 3.3 0 0 0-2.5-3.2"/></symbol>
+      <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="m3 12 9 5 9-5M3 16l9 5 9-5"/></symbol>
+      <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m7 14 4-4 4 3 6-7"/></symbol>
+      <symbol id="i-settings" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="m19.4 15 .1.1a1.7 1.7 0 0 1-2.4 2.4l-.1-.1a1.7 1.7 0 0 0-2.9 1.2v.2a1.7 1.7 0 0 1-3.4 0v-.2a1.7 1.7 0 0 0-2.9-1.2l-.1.1a1.7 1.7 0 1 1-2.4-2.4l.1-.1a1.7 1.7 0 0 0-1.2-2.9H4a1.7 1.7 0 0 1 0-3.4h.2a1.7 1.7 0 0 0 1.2-2.9l-.1-.1a1.7 1.7 0 1 1 2.4-2.4l.1.1a1.7 1.7 0 0 0 2.9-1.2V2a1.7 1.7 0 0 1 3.4 0v.2a1.7 1.7 0 0 0 2.9 1.2l.1-.1a1.7 1.7 0 1 1 2.4 2.4l-.1.1a1.7 1.7 0 0 0 1.2 2.9h.2a1.7 1.7 0 0 1 0 3.4h-.2a1.7 1.7 0 0 0-1.2 2.9Z"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.2 4.2"/></symbol>
+      <symbol id="i-bell" viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/></symbol>
+      <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+      <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+      <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></symbol>
+      <symbol id="i-more" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></symbol>
+      <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14m-7-7 7 7-7 7"/></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path d="m18 6-12 12M6 6l12 12"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+    </svg>
+
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <a class="brand" href="#overview" aria-label="Hope Inc. home">
+          <span class="brand-symbol"><i></i><i></i><i></i><i></i></span>
+          <span>hope<span class="brand-period">.</span></span><span class="brand-inc">INC.</span>
+        </a>
+
+        <div class="workspace-switcher">
+          <span class="workspace-avatar">H</span>
+          <span class="workspace-copy"><strong>Hope Inc.</strong><small>Company workspace</small></span>
+          <span class="switcher-chevron">⌄</span>
+        </div>
+
+        <div class="nav-caption">WORKSPACE</div>
+        <nav class="side-nav" aria-label="Main navigation">
+          <a class="nav-link active" href="#overview" aria-current="page"><svg><use href="#i-grid"/></svg><span>Overview</span></a>
+          <a class="nav-link" href="#people"><svg><use href="#i-users"/></svg><span>People</span><span class="nav-count">24</span></a>
+          <a class="nav-link" href="#projects"><svg><use href="#i-layers"/></svg><span>Projects</span><span class="nav-dot"></span></a>
+          <a class="nav-link" href="#insights"><svg><use href="#i-chart"/></svg><span>Insights</span></a>
+        </nav>
+
+        <div class="nav-caption tools-caption">PREFERENCES</div>
+        <nav class="side-nav" aria-label="Preferences">
+          <a class="nav-link" href="#settings" id="settings-link"><svg><use href="#i-settings"/></svg><span>Settings</span></a>
+        </nav>
+
+        <div class="sidebar-spacer"></div>
+        <div class="sidebar-note">
+          <div class="note-sparkle">✳</div>
+          <p>Good work happens<br />when everything <em>clicks.</em></p>
+          <span>Make room for your best.</span>
+          <div class="note-orbit orbit-one"></div><div class="note-orbit orbit-two"></div>
+        </div>
+        <button class="profile-button" type="button" aria-label="Open profile menu" aria-expanded="false">
+          <span class="avatar avatar-olivia">OC</span>
+          <span class="profile-copy"><strong>Olivia Chen</strong><small>Workspace admin</small></span>
+          <span class="profile-menu">···</span>
+        </button>
+      </aside>
+
+      <main class="main-content" id="overview">
+        <header class="topbar" id="topbar">
+          <div class="breadcrumb"><span>Workspace</span><svg><use href="#i-chevron"/></svg><strong>Overview</strong></div>
+          <div class="topbar-actions">
+            <label class="search-box">
+              <svg><use href="#i-search"/></svg>
+              <input id="global-search" type="search" placeholder="Search anything..." aria-label="Search people and projects" />
+              <kbd>⌘ K</kbd>
+            </label>
+            <button class="icon-button notification-trigger" type="button" aria-label="Notifications" aria-expanded="false">
+              <svg><use href="#i-bell"/></svg><i></i>
+            </button>
+            <button class="avatar avatar-olivia top-avatar" type="button" aria-label="Open account menu" aria-expanded="false">OC</button>
+          </div>
+          <div class="account-popover" id="account-popover" hidden>
+            <div class="account-popover-person"><span class="avatar avatar-olivia">OC</span><span><strong>Olivia Chen</strong><small>Workspace admin</small></span></div>
+            <a href="./auth.html">Sign out</a>
+          </div>
+          <div class="notification-popover" id="notification-popover" hidden>
+            <div class="popover-heading"><strong>Notifications</strong><span class="unread-label">2 new</span></div>
+            <div class="notification-item"><span class="notification-icon"><svg><use href="#i-users"/></svg></span><span><strong>New teammate onboarded</strong><small>Jamie Park joined Design · 12m ago</small></span></div>
+            <div class="notification-item"><span class="notification-icon warm"><svg><use href="#i-calendar"/></svg></span><span><strong>Planning sync in 30 min</strong><small>Product launch · Meeting room 2</small></span></div>
+            <button class="text-button mark-read" type="button">Mark all as read</button>
+          </div>
+        </header>
+
+        <div class="page-content">
+          <section class="welcome-section reveal">
+            <div class="welcome-copy">
+              <div class="eyebrow"><span class="eyebrow-line"></span> MONDAY, OCTOBER 19, 2026</div>
+              <h1>Good morning, Olivia<span class="heading-period">.</span></h1>
+              <p>Here’s what’s happening across your workspace today.</p>
+            </div>
+            <div class="welcome-actions">
+              <button class="button button-secondary date-button" type="button"><svg><use href="#i-calendar"/></svg><span>Oct 13 – 19</span><span class="button-caret">⌄</span></button>
+              <button class="button button-primary" type="button" id="invite-button"><svg><use href="#i-plus"/></svg> Invite people</button>
+            </div>
+          </section>
+
+          <section class="metrics-grid reveal" aria-label="Workspace at a glance">
+            <article class="metric-card metric-people">
+              <div class="metric-top"><span class="metric-label">TOTAL PEOPLE</span><span class="metric-icon"><svg><use href="#i-users"/></svg></span></div>
+              <div class="metric-value-row"><strong class="metric-value">24</strong><span class="metric-change positive"><svg><use href="#i-arrow-up"/></svg> 12.5%</span></div>
+              <div class="metric-foot"><span>vs. last month</span><div class="mini-bars" aria-hidden="true"><i style="--h:34%"></i><i style="--h:49%"></i><i style="--h:43%"></i><i style="--h:61%"></i><i style="--h:52%"></i><i style="--h:76%"></i><i style="--h:68%"></i><i style="--h:92%"></i></div></div>
+            </article>
+            <article class="metric-card">
+              <div class="metric-top"><span class="metric-label">ACTIVE PROJECTS</span><span class="metric-icon icon-lilac"><svg><use href="#i-layers"/></svg></span></div>
+              <div class="metric-value-row"><strong class="metric-value">08</strong><span class="metric-change neutral">2 due soon</span></div>
+              <div class="metric-foot"><span>Across 4 teams</span><div class="mini-bars lilac-bars" aria-hidden="true"><i style="--h:65%"></i><i style="--h:41%"></i><i style="--h:78%"></i><i style="--h:56%"></i><i style="--h:69%"></i><i style="--h:47%"></i><i style="--h:84%"></i><i style="--h:71%"></i></div></div>
+            </article>
+            <article class="metric-card">
+              <div class="metric-top"><span class="metric-label">TEAM MOMENTUM</span><span class="metric-icon icon-amber"><svg><use href="#i-chart"/></svg></span></div>
+              <div class="metric-value-row"><strong class="metric-value">86<span class="value-unit">%</span></strong><span class="metric-change positive"><svg><use href="#i-arrow-up"/></svg> 4.2%</span></div>
+              <div class="metric-foot"><span>Looking good this week</span><div class="momentum-track"><span></span></div></div>
+            </article>
+          </section>
+
+          <section class="content-grid" id="insights">
+            <article class="panel performance-panel reveal">
+              <div class="panel-header">
+                <div><div class="section-kicker">THE BIG PICTURE</div><h2>Workspace pulse</h2><p class="panel-description">Your team’s activity over the last 7 days</p></div>
+                <button class="button button-quiet period-button" type="button">This week <span class="button-caret">⌄</span></button>
+              </div>
+              <div class="chart-legend"><span><i class="legend-dot dot-green"></i>Completed</span><span><i class="legend-dot dot-lilac"></i>In progress</span></div>
+              <div class="chart-wrap" role="img" aria-label="Team activity chart: completed work increased through the week and peaked on Friday">
+                <div class="chart-y-labels"><span>80</span><span>60</span><span>40</span><span>20</span><span>0</span></div>
+                <div class="chart-main">
+                  <div class="chart-gridlines"><i></i><i></i><i></i><i></i><i></i></div>
+                  <svg class="activity-chart" viewBox="0 0 700 210" preserveAspectRatio="none" aria-hidden="true">
+                    <defs>
+                      <linearGradient id="green-fill" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="#54a989" stop-opacity=".22"/><stop offset="100%" stop-color="#54a989" stop-opacity="0"/></linearGradient>
+                      <linearGradient id="purple-fill" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="#a899d9" stop-opacity=".16"/><stop offset="100%" stop-color="#a899d9" stop-opacity="0"/></linearGradient>
+                    </defs>
+                    <path class="chart-area area-purple" d="M0 150 C45 142 55 127 100 136 S158 145 200 114 S256 124 300 118 S352 130 400 94 S458 112 500 83 S558 104 600 73 S655 83 700 56 V210 H0Z"/>
+                    <path class="chart-area area-green" d="M0 177 C46 170 57 160 100 169 S158 145 200 154 S258 124 300 141 S354 106 400 117 S456 88 500 108 S559 60 600 79 S654 43 700 31 V210 H0Z"/>
+                    <path class="chart-line line-purple" d="M0 150 C45 142 55 127 100 136 S158 145 200 114 S256 124 300 118 S352 130 400 94 S458 112 500 83 S558 104 600 73 S655 83 700 56"/>
+                    <path class="chart-line line-green" d="M0 177 C46 170 57 160 100 169 S158 145 200 154 S258 124 300 141 S354 106 400 117 S456 88 500 108 S559 60 600 79 S654 43 700 31"/>
+                    <circle class="chart-point" cx="600" cy="79" r="4"/><circle class="chart-point" cx="600" cy="73" r="4"/>
+                  </svg>
+                  <div class="chart-tooltip"><strong>Friday, Oct 17</strong><span><i class="legend-dot dot-green"></i> 68 completed</span><span><i class="legend-dot dot-lilac"></i> 72 in progress</span></div>
+                  <div class="chart-x-labels"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span class="active-day">Fri</span><span>Sat</span><span>Sun</span></div>
+                </div>
+              </div>
+              <div class="chart-summary"><span><span class="summary-indicator"></span>Team activity is <strong>up 18%</strong> from last week</span><a href="#projects">View insights <svg><use href="#i-arrow-right"/></svg></a></div>
+            </article>
+
+            <article class="panel focus-panel reveal">
+              <div class="panel-header focus-header">
+                <div><div class="section-kicker">MAKE IT COUNT</div><h2>Today’s focus</h2></div>
+                <span class="focus-date">OCT 19</span>
+              </div>
+              <div class="focus-progress"><div class="progress-ring"><svg viewBox="0 0 48 48" aria-hidden="true"><circle class="ring-track" cx="24" cy="24" r="19"/><circle class="ring-value" cx="24" cy="24" r="19"/></svg><span>2/3</span></div><div><strong>You’re on a roll</strong><small>Two of three priorities done</small></div></div>
+              <div class="focus-list">
+                <label class="focus-task completed-task"><input type="checkbox" checked /><span class="custom-check"><svg><use href="#i-check"/></svg></span><span class="task-copy"><strong>Review Q4 design direction</strong><small>Brand refresh <i class="task-dot green-task-dot"></i></small></span><span class="task-time">9:30</span></label>
+                <label class="focus-task completed-task"><input type="checkbox" checked /><span class="custom-check"><svg><use href="#i-check"/></svg></span><span class="task-copy"><strong>Weekly team stand-up</strong><small>People <i class="task-dot blue-task-dot"></i></small></span><span class="task-time">10:00</span></label>
+                <label class="focus-task"><input type="checkbox" /><span class="custom-check"><svg><use href="#i-check"/></svg></span><span class="task-copy"><strong>Send launch brief to team</strong><small>Product launch <i class="task-dot lilac-task-dot"></i></small></span><span class="task-time">14:30</span></label>
+              </div>
+              <button class="add-task-button" type="button" id="add-task-button"><svg><use href="#i-plus"/></svg> Add a priority</button>
+            </article>
+          </section>
+
+          <section class="lower-grid">
+            <article class="panel people-panel reveal" id="people">
+              <div class="panel-header lower-panel-header">
+                <div><div class="section-kicker">YOUR PEOPLE</div><h2>Team activity</h2></div>
+                <a class="panel-link" href="#people">All teammates <svg><use href="#i-arrow-right"/></svg></a>
+              </div>
+              <div class="people-table-wrap">
+                <table class="people-table">
+                  <thead><tr><th>TEAMMATE</th><th>TEAM</th><th>STATUS</th><th>LAST ACTIVE</th><th></th></tr></thead>
+                  <tbody id="people-list">
+                    <tr data-search="maya patel design brand refresh"><td><span class="person-cell"><span class="avatar person-avatar avatar-maya">MP</span><span><strong>Maya Patel</strong><small>maya@northstar.co</small></span></span></td><td><span class="team-label"><i class="team-dot dot-design"></i>Design</span></td><td><span class="status-pill status-working"><i></i>In focus</span></td><td class="last-active">Just now</td><td><button class="row-more" aria-label="More options for Maya Patel" type="button">···</button></td></tr>
+                    <tr data-search="james wilson product product launch"><td><span class="person-cell"><span class="avatar person-avatar avatar-james">JW</span><span><strong>James Wilson</strong><small>james@northstar.co</small></span></span></td><td><span class="team-label"><i class="team-dot dot-product"></i>Product</span></td><td><span class="status-pill status-meeting"><i></i>In a meeting</span></td><td class="last-active">12 min ago</td><td><button class="row-more" aria-label="More options for James Wilson" type="button">···</button></td></tr>
+                    <tr data-search="sofia garcia marketing campaign"><td><span class="person-cell"><span class="avatar person-avatar avatar-sofia">SG</span><span><strong>Sofia Garcia</strong><small>sofia@northstar.co</small></span></span></td><td><span class="team-label"><i class="team-dot dot-marketing"></i>Marketing</span></td><td><span class="status-pill status-away"><i></i>Away</span></td><td class="last-active">1 hr ago</td><td><button class="row-more" aria-label="More options for Sofia Garcia" type="button">···</button></td></tr>
+                  </tbody>
+                </table>
+                <div class="empty-search" id="empty-search" hidden>No teammates match your search.</div>
+              </div>
+            </article>
+
+            <article class="panel projects-panel reveal" id="projects">
+              <div class="panel-header lower-panel-header">
+                <div><div class="section-kicker">IN MOTION</div><h2>Active projects</h2></div>
+                <button class="icon-button subtle-more" type="button" aria-label="Project options"><svg><use href="#i-more"/></svg></button>
+              </div>
+              <div class="project-list">
+                <a class="project-item" href="#projects">
+                  <span class="project-icon project-brand">✳</span>
+                  <span class="project-info"><strong>Brand refresh</strong><small>Design · 6 members</small></span>
+                  <span class="project-status"><span class="project-percent">78%</span><span class="project-bar"><i style="--progress:78%"></i></span></span>
+                  <span class="project-arrow"><svg><use href="#i-arrow-right"/></svg></span>
+                </a>
+                <a class="project-item" href="#projects">
+                  <span class="project-icon project-launch"><svg><use href="#i-arrow-up"/></svg></span>
+                  <span class="project-info"><strong>Product launch</strong><small>Product · 8 members</small></span>
+                  <span class="project-status"><span class="project-percent">52%</span><span class="project-bar lilac-progress"><i style="--progress:52%"></i></span></span>
+                  <span class="project-arrow"><svg><use href="#i-arrow-right"/></svg></span>
+                </a>
+                <a class="project-item" href="#projects">
+                  <span class="project-icon project-campaign"><svg><use href="#i-chart"/></svg></span>
+                  <span class="project-info"><strong>Autumn campaign</strong><small>Marketing · 4 members</small></span>
+                  <span class="project-status"><span class="project-percent">34%</span><span class="project-bar amber-progress"><i style="--progress:34%"></i></span></span>
+                  <span class="project-arrow"><svg><use href="#i-arrow-right"/></svg></span>
+                </a>
+              </div>
+              <a class="all-projects-link" href="#projects">See all projects <svg><use href="#i-arrow-right"/></svg></a>
+            </article>
+          </section>
+
+          <footer class="page-footer" id="settings">
+            <span>Made for people doing meaningful work <span class="footer-star">✳</span></span>
+            <button class="theme-toggle" id="theme-toggle" type="button"><svg><use href="#i-sun"/></svg><span>Appearance</span><i></i></button>
+          </footer>
+        </div>
+      </main>
+    </div>
+
+    <div class="modal-backdrop" id="invite-modal" hidden>
+      <section class="invite-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" type="button" aria-label="Close dialog"><svg><use href="#i-close"/></svg></button>
+        <div class="modal-icon"><svg><use href="#i-mail"/></svg></div>
+        <div class="section-kicker">GROW TOGETHER</div>
+        <h2 id="modal-title">Bring your people in.</h2>
+        <p>Send an invite and make room for great work.</p>
+        <form id="invite-form">
+          <label for="invite-name">Name</label>
+          <input id="invite-name" name="name" autocomplete="name" placeholder="e.g. Alex Morgan" required />
+          <label for="invite-email">Work email</label>
+          <input id="invite-email" name="email" type="email" autocomplete="email" placeholder="alex@company.com" required />
+          <label for="invite-team">Team</label>
+          <select id="invite-team" name="team"><option>Design</option><option>Product</option><option>Marketing</option><option>Operations</option><option>Sales</option></select>
+          <button class="button button-primary modal-submit" type="submit"><svg><use href="#i-plus"/></svg> Send invitation</button>
+        </form>
+      </section>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"><span class="toast-check"><svg><use href="#i-check"/></svg></span><span id="toast-message">All set.</span></div>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f6f7f4" />
+    <meta name="description" content="Sign in or create your Hope Inc. workspace account." />
+    <title>Sign in — Hope Inc.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./auth.css" />
+    <script src="./auth.js" defer></script>
+  </head>
+  <body class="auth-page">
+    <div class="auth-preloader" id="auth-preloader" aria-hidden="true">
+      <span class="brand-symbol"><i></i><i></i><i></i><i></i></span>
+      <span>hope<span class="brand-period">.</span></span>
+    </div>
+    <main class="auth-layout">
+      <section class="auth-story" aria-label="About Hope Inc.">
+        <a class="auth-brand" href="./index.html" aria-label="Hope Inc. home">
+          <span class="brand-symbol"><i></i><i></i><i></i><i></i></span>
+          <span>hope<span class="brand-period">.</span></span>
+          <span class="auth-brand-inc">INC.</span>
+        </a>
+
+        <div class="story-content">
+          <div class="story-kicker"><span></span> WORK, WITH A LITTLE MORE HOPE</div>
+          <h1>Make space<br />for <em>what’s next.</em></h1>
+          <p>Good work isn’t a solo act. Bring your people, priorities, and big ideas into one thoughtful place.</p>
+          <div class="story-art" aria-hidden="true">
+            <div class="art-orbit orbit-a"></div>
+            <div class="art-orbit orbit-b"></div>
+            <div class="art-orbit orbit-c"></div>
+            <div class="art-sun"></div>
+            <div class="art-hill hill-back"></div>
+            <div class="art-hill hill-front"></div>
+            <div class="art-star star-a">✳</div>
+            <div class="art-star star-b">✦</div>
+            <div class="art-star star-c">·</div>
+            <div class="art-caption"><span>01 — 04</span><span>A brighter way to work</span></div>
+          </div>
+        </div>
+        <div class="story-footer"><span>© 2026 Hope Inc.</span><span>Made for people doing meaningful work <i>✳</i></span></div>
+      </section>
+
+      <section class="auth-main">
+        <div class="auth-topline">
+          <span class="auth-top-note">A workspace that works for you.</span>
+          <span class="auth-switch-copy" id="top-switch-copy">New around here? <a href="./auth.html?mode=signup">Create an account</a></span>
+        </div>
+        <div class="auth-card-wrap">
+          <div class="auth-card" id="auth-card">
+            <div class="auth-welcome-icon" aria-hidden="true"><span class="brand-symbol"><i></i><i></i><i></i><i></i></span></div>
+            <div class="auth-eyebrow" id="auth-eyebrow">WELCOME BACK</div>
+            <h2 id="auth-heading">Good to see you.</h2>
+            <p class="auth-intro" id="auth-intro">Sign in to pick up right where your team left off.</p>
+
+            <div class="auth-tabs" role="tablist" aria-label="Account access">
+              <a class="auth-tab is-active" id="login-tab" role="tab" aria-selected="true" href="./auth.html?mode=login">Sign in</a>
+              <a class="auth-tab" id="signup-tab" role="tab" aria-selected="false" href="./auth.html?mode=signup">Create account</a>
+            </div>
+
+            <div class="auth-demo-note"><span class="demo-dot"></span>Preview mode · Authentication isn’t connected</div>
+            <div class="auth-feedback" id="auth-feedback" role="status" aria-live="polite" hidden></div>
+
+            <form class="auth-form" id="auth-form" novalidate>
+              <div class="field-group name-field" id="name-field" hidden>
+                <label for="full-name">Your name</label>
+                <div class="input-wrap">
+                  <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M5 21v-2a7 7 0 0 1 14 0v2"/></svg>
+                  <input id="full-name" name="name" type="text" autocomplete="name" placeholder="How should we call you?" minlength="2" />
+                </div>
+                <span class="field-error" id="name-error"></span>
+              </div>
+              <div class="field-group">
+                <label for="email">Work email</label>
+                <div class="input-wrap">
+                  <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                  <input id="email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required />
+                </div>
+                <span class="field-error" id="email-error"></span>
+              </div>
+              <div class="field-group">
+                <div class="label-row"><label for="password">Password</label><a class="forgot-link" id="forgot-link" href="#reset">Forgot password?</a></div>
+                <div class="input-wrap">
+                  <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 1 1 8 0v3"/></svg>
+                  <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" minlength="8" required />
+                  <button class="password-toggle" type="button" aria-label="Show password" aria-pressed="false">
+                    <svg class="eye-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg>
+                  </button>
+                </div>
+                <span class="field-error" id="password-error"></span>
+              </div>
+              <div class="field-group confirm-field" id="confirm-field" hidden>
+                <label for="confirm-password">Confirm password</label>
+                <div class="input-wrap">
+                  <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 1 1 8 0v3"/></svg>
+                  <input id="confirm-password" name="confirm-password" type="password" autocomplete="new-password" placeholder="Enter your password again" minlength="8" />
+                  <button class="password-toggle" type="button" aria-label="Show password" aria-pressed="false">
+                    <svg class="eye-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg>
+                  </button>
+                </div>
+                <span class="field-error" id="confirm-error"></span>
+              </div>
+              <label class="remember-row" id="remember-row"><input type="checkbox" name="remember" checked /><span class="remember-box"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg></span><span>Keep me signed in</span></label>
+              <label class="remember-row terms-row" id="terms-row" hidden><input type="checkbox" name="terms" /><span class="remember-box"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg></span><span>I agree to the <a href="#terms">Terms of Service</a> and <a href="#privacy">Privacy Policy</a></span></label>
+              <button class="auth-submit" type="submit"><span id="submit-label">Sign in to your workspace</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14m-7-7 7 7-7 7"/></svg></button>
+            </form>
+
+            <div class="auth-divider"><span></span><small>YOUR WORKSPACE, YOUR WAY</small><span></span></div>
+            <p class="auth-footnote" id="auth-footnote">Just exploring? <a href="./index.html">Take a look around</a></p>
+            <p class="auth-legal">By continuing, you agree to Hope Inc.’s <a href="#terms">Terms</a> and <a href="#privacy">Privacy Policy</a>.</p>
+          </div>
+        </div>
+        <div class="mobile-story-footer">© 2026 Hope Inc. <span>Thoughtful work starts here.</span></div>
+      </section>
+    </main>
+  </body>
+</html>
